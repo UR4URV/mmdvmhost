@@ -1,4 +1,3 @@
----
 ## Cloning the repository and building the image
 ```
 # cd /opt/
