@@ -1,17 +1,17 @@
 ## Creating and running a container "mmdvmhost" from DockerHub
 ```
 # docker run -it --name "mmdvmhost" \
-# --hostname "mmdvmhost" \
-# --device /dev/ttyS0:/dev/ttyACM0 \
-# --device /dev/ttyS1:/dev/ttyACM1 \
-# --device /dev/ttyS2:/dev/ttyACM2 \
-# --device /dev/ttyS3:/dev/ttyACM3 \
-# -v ./config/:/usr/local/etc/ \
-# -v ./log/:/var/log/ \
-# -v /etc/timezone:/etc/timezone:ro \
-# -v /etc/localtime:/etc/localtime:ro \
-# --restart unless-stopped \
-# -d ur4urv/mmdvmhost
+  --hostname "mmdvmhost" \
+  --device /dev/ttyS0:/dev/ttyACM0 \
+  --device /dev/ttyS1:/dev/ttyACM1 \
+  --device /dev/ttyS2:/dev/ttyACM2 \
+  --device /dev/ttyS3:/dev/ttyACM3 \
+  -v ./config/:/usr/local/etc/ \
+  -v ./log/:/var/log/ \
+  -v /etc/timezone:/etc/timezone:ro \
+  -v /etc/localtime:/etc/localtime:ro \
+  --restart unless-stopped \
+  -d ur4urv/mmdvmhost
 ```
 
 ---
@@ -33,16 +33,16 @@
 ## Creating and running a container "mmdvmhost" from local repo
 ```
 # docker run -it --name "mmdvmhost" \
-# --hostname "mmdvmhost" \
-# --device /dev/ttyS0:/dev/ttyACM0 \
-# --device /dev/ttyS1:/dev/ttyACM1 \
-# --device /dev/ttyS2:/dev/ttyACM2 \
-# --device /dev/ttyS3:/dev/ttyACM3 \
-# -v ./config/:/usr/local/etc/ \
-# -v ./log/:/var/log/ \
-# -v /etc/timezone:/etc/timezone:ro \
-# -v /etc/localtime:/etc/localtime:ro \
-# --restart unless-stopped \
-# -d mmdvmhost
+  --hostname "mmdvmhost" \
+  --device /dev/ttyS0:/dev/ttyACM0 \
+  --device /dev/ttyS1:/dev/ttyACM1 \
+  --device /dev/ttyS2:/dev/ttyACM2 \
+  --device /dev/ttyS3:/dev/ttyACM3 \
+  -v ./config/:/usr/local/etc/ \
+  -v ./log/:/var/log/ \
+  -v /etc/timezone:/etc/timezone:ro \
+  -v /etc/localtime:/etc/localtime:ro \
+  --restart unless-stopped \
+  -d mmdvmhost
 ```
 
